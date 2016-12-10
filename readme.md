@@ -1,9 +1,9 @@
 # form2mime.php
 
-This form mailer supports file attachments (see [RFC-1867](https://www.ietf.org/rfc/rfc1867.txt)).
+This otherwise very simple form mailer supports file attachments (see [RFC-1867](https://www.ietf.org/rfc/rfc1867.txt)).
 
 It does not do any auth, spam recognition etc.
-Inteded use: Add a fixed FROM and TO address etc and make your PHP server send you MIME emails when it receives an HTTP POST request containing form fields as well as files.
+Inteded use: Add a fixed `FROM` and `TO` address etc and make your PHP server send you `MIME` emails when it receives an `HTTP POST` request containing form fields as well as files.
 
 Warning: Do not change the code to parametrize the `TO` address by user input or you will have created an open mail relay. ☠
 
