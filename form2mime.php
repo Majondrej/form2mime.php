@@ -9,7 +9,6 @@
 
 // Configuration
 define("FROM", "your-friendly-form2mime-bot@mydomain.com");
-//define("TO", "fs-accu");
 define("TO", "static-address-since-we-do-no-auth-at-all@mydomain.com");
 define("SUBJECT", "New request coming through the tubes");
 define("acMIME_BORDER", "XXXXYovercomeYbordersYXXXX");
@@ -42,7 +41,6 @@ function encode($displayFilename, $onDiskFilename, $contentType) {
 // Dynamic text data
 $message .= "--" . acMIME_BORDER . "\r\n";
 $message .= "Content-Type: text/plain\r\n\r\n";
-$message .= "This eMail was sent using the accu:rate Summon Support feature.\r\n\r\n";
 
 foreach ($_POST as $key => $value) {
     $message .= $key . ": " . $value . "\r\n";
@@ -76,4 +74,3 @@ if (mail(TO, SUBJECT, $message, $headers)) {
 }
 
 ?>
-
