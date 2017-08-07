@@ -40,7 +40,7 @@ function encode($displayFilename, $onDiskFilename, $contentType) {
 
 // Dynamic text data
 $message .= "--" . acMIME_BORDER . "\r\n";
-$message .= "Content-Type: text/plain\r\n\r\n";
+$message .= "Content-Type: text/plain; charset=utf-8\r\n\r\n";
 
 foreach ($_POST as $key => $value) {
     $message .= $key . ": " . $value . "\r\n";
