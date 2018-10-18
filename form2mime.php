@@ -18,7 +18,7 @@ define("acMIME_BORDER", "XXXXYovercomeYbordersYXXXX");
 // Initialize variables
 $headers = "From: " . FROM . "\n"
          . "MIME-Version: 1.0\n"
-         . "Content-Type: multipart/mixed; boundary=" . acMIME_BORDER . "\n\n"
+         . "Content-Type: multipart/mixed; boundary=" . acMIME_BORDER . "\n"
          . "This is a message with multiple parts in MIME format.\n";
 $message = "";
 $attachments = "";
