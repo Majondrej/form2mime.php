@@ -12,5 +12,5 @@ I was looking for a simple form mailer for the backend and couldn't find any.
 Hence I release this code into the wild.
 Use it as you like.
 
-Tested on PHP 5.2 and 5.5. Should easily run on many more versions.
+Tested on PHP 5.2, 5.5, 7.0 and 7.3. Should easily run on many more versions.
 
